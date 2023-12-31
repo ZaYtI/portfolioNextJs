@@ -4,7 +4,7 @@ export default function Footer() {
   return(
     <div className={styles.footer_wrapper}>
       <h1 className={styles.footer_title}>Antonin Riquart Portfolio</h1>
-      <ul>
+      <ul className={styles.list}>
         <li>
           Titulaire du permis B et A
         </li>
