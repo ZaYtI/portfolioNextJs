@@ -14,6 +14,10 @@ Pour la gestion des routes, Next.js offre un mécanisme plus simple et moins enc
 
 Next.js propose le composant "Link", permettant le chargement asynchrone des pages. Cela réduit le besoin de recharger la page entièrement, offrant une expérience utilisateur plus fluide.
 
+### Optimisation des images avec SVG :
+
+L'utilisation d'images SVG pour les icônes et les éléments graphiques peut contribuer à réduire la taille des fichiers images et à permettre un redimensionnement sans perte de qualité, ce qui peut améliorer l'efficacité énergétique du sit
+
 ## Mise en place lors de mon projet
 
 ### Réduction des images
@@ -35,3 +39,5 @@ J'ai décidé pour la navbar d'utiliser seulement 2 liens, car le site n'en dema
 ### Les liens
 
 En effet, pour ce qui s'agit des liens comme présenté dans la partie ci-dessus, j'ai utilisé le composant "Link" fourni par Next.js qui permet un chargement asynchrone de la page et donc fluidifie l'expérience utilisateur.
+
+(utilisation de chatgpt pour les fautes)
