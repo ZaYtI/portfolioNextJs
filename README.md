@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mémoire Antonin Riquart
 
-## Getting Started
+## En quoi Next.js permet de réaliser des sites internet éco-conçus
 
-First, run the development server:
+### Gestion des images
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js propose un composant "Image" spécifique au framework, qui ajuste automatiquement la taille de l'image en fonction de l'écran. Ce composant permet de définir une taille par défaut, contribuant ainsi à réduire le temps de chargement.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Les routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Pour la gestion des routes, Next.js offre un mécanisme plus simple et moins encombrant. La création d'une route nécessite simplement la création d'un dossier, par exemple "dashboard", contenant un fichier "page.tsx". Cela crée une route accessible depuis http://localhost:3000/dashboard, évitant la déclaration manuelle de chaque route.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Gestion des liens
 
-## Learn More
+Next.js propose le composant "Link", permettant le chargement asynchrone des pages. Cela réduit le besoin de recharger la page entièrement, offrant une expérience utilisateur plus fluide.
 
-To learn more about Next.js, take a look at the following resources:
+## Mise en place lors de mon projet
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Réduction des images
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Étant donné que nos projets sont souvent très visuels, présenter chaque projet individuellement aurait nécessité beaucoup d'images, contrevenant aux principes d'écoconception. J'ai donc décidé de mettre des liens vers mes profils GitLab et GitHub pour réduire le nombre d'images sur le site.
 
-## Deploy on Vercel
+### Utilisation des modules CSS de Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Plutôt que d'utiliser Tailwind, j'ai préféré utiliser les modules CSS fournis par Next.js. Cela permet une modularité simple pour chaque composant, évitant l'importation de classes potentiellement inutiles et améliorant la lisibilité du code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Images
+
+J'ai utilisé le composant "Image" de Next.js pour réduire l'impact des images sur le site. L'utilisation de SVG permet un redimensionnement sans perte de qualité.
+
+### Navbar
+
+J'ai décidé pour la navbar d'utiliser seulement 2 liens, car le site n'en demande pas plus, et l'utilisation aurait nécessité l'utilisation d'un menu burger, ce qui aurait aussi nécessité l'utilisation de JavaScript et comme vu dans votre slide (pas de JS).
+
+### Les liens
+
+En effet, pour ce qui s'agit des liens comme présenté dans la partie ci-dessus, j'ai utilisé le composant "Link" fourni par Next.js qui permet un chargement asynchrone de la page et donc fluidifie l'expérience utilisateur.
