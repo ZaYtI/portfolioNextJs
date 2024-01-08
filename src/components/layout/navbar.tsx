@@ -4,6 +4,7 @@ import Link from 'next/link';
 const navItems = [
   { href: '/', label: 'accueil' },
   { href: '/project', label: 'projets' },
+  { href: '/experiences', label: 'experiences'}
 ];
 
 export default function Navbar() {

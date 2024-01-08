@@ -55,6 +55,7 @@
   align-items: center;
   text-transform: uppercase;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .footer_title{
